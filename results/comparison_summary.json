@@ -1,0 +1,226 @@
+{
+  "settings": {
+    "data_seed": 42,
+    "seeds": [
+      7,
+      8,
+      9
+    ],
+    "batch_size": 64,
+    "momentum": 0.9,
+    "warmup_epochs": 150,
+    "pruning_epochs": 150,
+    "learning_rate": 0.01,
+    "score_data": "All 900 training samples at each pruning checkpoint; no test data.",
+    "budget_note": "Equal optimizer updates and batch orders. Taylor uses three extra full-training gradient evaluations per nonzero target, without updates; training compute/time is not equal."
+  },
+  "method_results": [
+    {
+      "criterion": "magnitude",
+      "target_sparsity": 0,
+      "achieved_sparsity": 0.0,
+      "active_weights": 32,
+      "mean_accuracy": 0.9733333333333333,
+      "sample_std_accuracy": 0.003333333333333355,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "magnitude",
+      "target_sparsity": 0.25,
+      "achieved_sparsity": 0.25,
+      "active_weights": 24,
+      "mean_accuracy": 0.9711111111111111,
+      "sample_std_accuracy": 0.005091750772173164,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "magnitude",
+      "target_sparsity": 0.5,
+      "achieved_sparsity": 0.5,
+      "active_weights": 16,
+      "mean_accuracy": 0.9700000000000001,
+      "sample_std_accuracy": 0.023333333333333317,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "magnitude",
+      "target_sparsity": 0.75,
+      "achieved_sparsity": 0.75,
+      "active_weights": 8,
+      "mean_accuracy": 0.5577777777777778,
+      "sample_std_accuracy": 0.14553859103853345,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "magnitude",
+      "target_sparsity": 0.9,
+      "achieved_sparsity": 0.90625,
+      "active_weights": 3,
+      "mean_accuracy": 0.4988888888888889,
+      "sample_std_accuracy": 0.001924500897298765,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "taylor",
+      "target_sparsity": 0,
+      "achieved_sparsity": 0.0,
+      "active_weights": 32,
+      "mean_accuracy": 0.9733333333333333,
+      "sample_std_accuracy": 0.003333333333333355,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "taylor",
+      "target_sparsity": 0.25,
+      "achieved_sparsity": 0.25,
+      "active_weights": 24,
+      "mean_accuracy": 0.9655555555555555,
+      "sample_std_accuracy": 0.008388704928078635,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "taylor",
+      "target_sparsity": 0.5,
+      "achieved_sparsity": 0.5,
+      "active_weights": 16,
+      "mean_accuracy": 0.7822222222222223,
+      "sample_std_accuracy": 0.1320914385876244,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "taylor",
+      "target_sparsity": 0.75,
+      "achieved_sparsity": 0.75,
+      "active_weights": 8,
+      "mean_accuracy": 0.5333333333333333,
+      "sample_std_accuracy": 0.02027587510099405,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "criterion": "taylor",
+      "target_sparsity": 0.9,
+      "achieved_sparsity": 0.90625,
+      "active_weights": 3,
+      "mean_accuracy": 0.5066666666666667,
+      "sample_std_accuracy": 0.04409585518440984,
+      "seeds": [
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "paired_differences": [
+    {
+      "target_sparsity": 0,
+      "seeds": [
+        7,
+        8,
+        9
+      ],
+      "taylor_minus_magnitude_percentage_points": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_percentage_points": 0.0,
+      "sample_std_difference_percentage_points": 0.0
+    },
+    {
+      "target_sparsity": 0.25,
+      "seeds": [
+        7,
+        8,
+        9
+      ],
+      "taylor_minus_magnitude_percentage_points": [
+        -1.0000000000000009,
+        -1.3333333333333308,
+        0.666666666666671
+      ],
+      "mean_difference_percentage_points": -0.5555555555555536,
+      "sample_std_difference_percentage_points": 1.0715167512214412
+    },
+    {
+      "target_sparsity": 0.5,
+      "seeds": [
+        7,
+        8,
+        9
+      ],
+      "taylor_minus_magnitude_percentage_points": [
+        -14.333333333333332,
+        -7.9999999999999964,
+        -34.0
+      ],
+      "mean_difference_percentage_points": -18.777777777777775,
+      "sample_std_difference_percentage_points": 13.557832231400964
+    },
+    {
+      "target_sparsity": 0.75,
+      "seeds": [
+        7,
+        8,
+        9
+      ],
+      "taylor_minus_magnitude_percentage_points": [
+        -15.000000000000002,
+        -5.333333333333334,
+        13.0
+      ],
+      "mean_difference_percentage_points": -2.444444444444445,
+      "sample_std_difference_percentage_points": 14.221788187821504
+    },
+    {
+      "target_sparsity": 0.9,
+      "seeds": [
+        7,
+        8,
+        9
+      ],
+      "taylor_minus_magnitude_percentage_points": [
+        -2.666666666666667,
+        -1.0000000000000009,
+        6.0
+      ],
+      "mean_difference_percentage_points": 0.7777777777777773,
+      "sample_std_difference_percentage_points": 4.598711574794417
+    }
+  ]
+}

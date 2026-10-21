@@ -1,0 +1,26 @@
+{
+  "data_seed": 42,
+  "model_seed": 7,
+  "train_samples": 900,
+  "test_samples": 300,
+  "warmup_epochs": 150,
+  "pruning_epochs": 150,
+  "batch_size": 64,
+  "pruning_schedule": {
+    "30": 0.15,
+    "60": 0.3,
+    "90": 0.5
+  },
+  "learning_rate": 0.01,
+  "momentum": 0.9,
+  "total_weights": 32,
+  "active_weights_after_pruning": 16,
+  "unpruned_biases": 10,
+  "weight_sparsity": 0.5,
+  "test_loss_before": 0.11312255786233759,
+  "test_loss_after": 0.09275556215711375,
+  "test_accuracy_before": 0.9733333333333334,
+  "test_accuracy_after": 0.9933333333333333,
+  "accuracy_change_percentage_points": 1.9999999999999907,
+  "cost_note": "Training remains dense; results/cost.json measures a separate sparse inference path. Counts cover connection multiplications only; no runtime speedup is claimed."
+}

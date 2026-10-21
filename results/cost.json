@@ -1,0 +1,7 @@
+{
+  "dense_connection_multiplications_per_input": 32,
+  "sparse_connection_multiplications_per_input": 16,
+  "connection_multiplication_reduction": 0.5,
+  "predictions_match": true,
+  "count_scope": "Connection multiplications only; excludes other operations and overhead. No total FLOP, runtime or storage savings claimed."
+}
